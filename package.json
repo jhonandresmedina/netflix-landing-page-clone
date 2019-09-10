@@ -1,0 +1,28 @@
+{
+  "name": "netflix-landing-page-clone",
+  "version": "1.0.0",
+  "description": "Netflix landing page clone for practice purposes",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-local": "sass --watch sass/style.sass:css/style.css"
+  },
+  "homepage": "https://github.com/jhonandresmedina/netflix-landing-page-clone#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonandresmedina/netflix-landing-page-clone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhonandresmedina/netflix-landing-page-clone/issues"
+  },
+  "keywords": [
+    "html5",
+    "css3",
+    "sass",
+    "javascript"
+  ],
+  "author": "John Medina",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "1.22.10"
+  }
+}
