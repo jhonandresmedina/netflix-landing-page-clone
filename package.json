@@ -4,7 +4,8 @@
   "description": "Netflix landing page clone for practice purposes",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev-local": "sass --watch sass/style.sass:css/style.css"
+    "dev": "concurrently \"live-server src\" \"npm run sass\" ",
+    "sass": "sass --watch src/sass/style.sass:src/css/style.css"
   },
   "homepage": "https://github.com/jhonandresmedina/netflix-landing-page-clone#readme",
   "repository": {
@@ -23,6 +24,8 @@
   "author": "John Medina",
   "license": "MIT",
   "devDependencies": {
+    "concurrently": "4.1.2",
+    "live-server": "1.2.1",
     "sass": "1.22.10"
   }
 }
