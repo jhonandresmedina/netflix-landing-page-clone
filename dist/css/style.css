@@ -35,6 +35,71 @@ img {
   width: 100%;
 }
 
+.show {
+  display: block !important;
+}
+
+.text-xl {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.text-md {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #999;
+}
+
+.btn {
+  display: inline-block;
+  background: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+}
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-rounded {
+  border-radius: 5px;
+}
+
+.btn-xl {
+  font-size: 2rem;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+
+.btn-lg {
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
+}
+
+.btn-icon {
+  margin-left: 1rem;
+}
+
 .showcase {
   width: 100%;
   height: 93vh;
@@ -139,10 +204,6 @@ img {
   display: none;
 }
 
-.show {
-  display: block !important;
-}
-
 #tab-1-content .tab-1-content-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -191,6 +252,13 @@ img {
   background: #222;
 }
 
+.container {
+  max-width: 70%;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
 .footer {
   max-width: 75%;
   margin: 1rem auto;
@@ -212,74 +280,6 @@ img {
 }
 .footer li {
   line-height: 1.9;
-}
-
-.container {
-  max-width: 70%;
-  margin: auto;
-  overflow: hidden;
-  padding: 0 2rem;
-}
-
-.text-xl {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.text-lg {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-
-.text-md {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-dark {
-  color: #999;
-}
-
-.btn {
-  display: inline-block;
-  background: #e50914;
-  color: #fff;
-  padding: 0.4rem 1.3rem;
-  font-size: 1rem;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  margin-right: 0.5rem;
-  outline: none;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  border-radius: 2px;
-}
-.btn:hover {
-  opacity: 0.9;
-}
-
-.btn-rounded {
-  border-radius: 5px;
-}
-
-.btn-xl {
-  font-size: 2rem;
-  padding: 1.5rem;
-  text-transform: uppercase;
-}
-
-.btn-lg {
-  font-size: 1rem;
-  padding: 0.8rem 1.3rem;
-  text-transform: uppercase;
-}
-
-.btn-icon {
-  margin-left: 1rem;
 }
 
 @media (max-width: 960px) {
