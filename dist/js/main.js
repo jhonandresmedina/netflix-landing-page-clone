@@ -1,20 +1,20 @@
-const tabItems = document.querySelectorAll(".tab-item");
-const tabContentItems = document.querySelectorAll(".tab-content-item");
+const SHOW_CLASS = "show";
+const TAB_BORDER_CLASS = "tab-border";
+const selectAll = selector => document.querySelectorAll(selector);
+const select = selector => document.querySelector(selector);
+const tabItems = selectAll(".tab-item");
+const tabContentItems = selectAll(".tab-content-item");
+
+const removeClassFromAllItems = (items, className) =>
+  items.forEach(item => item.classList.remove(className));
+
+const addClass = (item, className) => item.classList.add(className);
 
 function onClickSelectItem(event) {
-  removeBorder();
-  removeShowClass();
-  this.classList.add("tab-border");
-  const tabContentItem = document.querySelector(`#${this.id}-content`);
-  tabContentItem.classList.add("show");
-}
-
-function removeBorder() {
-  tabItems.forEach(item => item.classList.remove("tab-border"));
-}
-
-function removeShowClass() {
-  tabContentItems.forEach(item => item.classList.remove("show"));
+  removeClassFromAllItems(tabItems, TAB_BORDER_CLASS);
+  removeClassFromAllItems(tabContentItems, SHOW_CLASS);
+  addClass(this, TAB_BORDER_CLASS);
+  addClass(select(`#${this.id}-content`), SHOW_CLASS);
 }
 
 tabItems.forEach(item => item.addEventListener("click", onClickSelectItem));
